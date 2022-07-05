@@ -1,0 +1,54 @@
+﻿@{
+    Layout = null;
+}
+
+@{ 
+    var nomeCompleto = "";
+
+    if(IsPost) {
+
+        //recupera o valor informado no formulario
+        var nome = Request["txtNome"];
+        var sobrenome = Request["txtSobrenome"];
+
+        nomeCompleto = nome + " " + sobrenome;
+
+    }
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <style type="text/css">
+        body {background-color: beige; font-family: Verdana, Arial; margin: 50px; }
+        form {padding: 8px; border-style: solid; width: 280px; }
+    </style>
+    <title>Objetos</title>
+</head>
+<body>
+
+    <p>Digite o seu nome e sobrenome</p>
+
+    <form action="" method="post">
+
+        <p>
+            <label for="text1">Nome:</label>
+            <input type="text" name="txtNome" />
+        </p>
+
+        <p>
+            <label for="text1">Sobrenome:</label>
+            <input type="text" name="txtSobrenome" />
+        </p>
+
+        <p><input type="submit" value="Enviar" /></p>
+
+    </form>
+
+    <p>Nome Completo: <b> @nomeCompleto </b></p>
+
+
+</body>
+</html>

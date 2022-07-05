@@ -1,0 +1,31 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Razor</title>
+</head>
+<body>
+    
+    <!--Conhecendo o caractere @-->
+
+    @{ var engine = "Razor"; }
+    @{ var IDE = "WebMatrix"; }
+
+    <p>A IDE utilizada é o: @IDE  </p>
+    <p>A view engine utilizada é o : @engine</p>
+
+    @{ 
+        var texto = "O WebMatrix e o Razor são tecnologias ";
+        var empresa = "Microsoft.";
+        var textoCompleto = texto + " : " + empresa;
+    }
+
+    <p>@textoCompleto</p>
+
+</body>
+</html>
