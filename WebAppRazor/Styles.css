@@ -1,0 +1,24 @@
+﻿body {
+}
+
+table {
+    border-collapse: collapse;
+    width: 40%;
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid black;
+    height: 30px;
+}
+
+.acabando{
+    color: red;
+}
+
+.headtable{
+   font-weight: bold;
+   font-size: 20px;
+}
+
+

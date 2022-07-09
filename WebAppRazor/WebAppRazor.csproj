@@ -88,6 +88,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Styles.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -100,6 +101,8 @@
     <Content Include="Page3.cshtml" />
     <Content Include="Page4.cshtml" />
     <Content Include="Page5.cshtml" />
+    <Content Include="Page6.cshtml" />
+    <Content Include="Page7.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
